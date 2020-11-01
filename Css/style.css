@@ -1,3 +1,8 @@
+:root {
+  --font-web: "Roboto", "sans-serif";
+  --font-title: "Montserrat", sans-serif;
+  --Primary-color: #3196ff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +16,11 @@ ul {
   list-style: none;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-web);
 }
 /* Utilitze */
 .container {
-  width: 1200px;
+  width: 90%;
   margin: auto;
 }
 /* Make Navbar */
@@ -27,8 +32,9 @@ body {
   justify-content: space-between;
   padding: 10px 0;
 }
-/* 
- */
+.container-nav .logo {
+  height: 56px;
+}
 .container-nav .logo img {
   width: 100%;
   height: 100%;
@@ -43,22 +49,62 @@ body {
   padding: 10px 16px;
   display: block;
   font-size: 14px;
-  color: #000;
+  color: #4a4a4a;
   transition: all 0.3s ease-out;
 }
 .container-nav .list .list-item:hover a {
-  background: #0099ffd2;
+  background: var(--Primary-color);
   color: #fff;
   border-radius: 2px;
 }
 
 /* HEADER */
 #showcase {
-  background: url(../Image/d-1.jpg) no-repeat center center/cover;
   height: 80vh;
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+#showcase:before {
+  content: "";
+  background: url(../Image/d-1.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
   z-index: -1;
-  display: flex;
 }
 .showcase-content {
-  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.showcase-content h1 {
+  margin: 27px 0;
+  font-size: 39px;
+  letter-spacing: 1px;
+  font-family: var(--font-title);
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  margin: 0 15px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  border-width: 5px;
+  border: 3px solid #fff;
+  padding: 7px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: var(--font-title);
+}
+
+.btn:hover {
+  background-color: var(--Primary-color);
+  border: 3px solid var(--Primary-color);
 }
