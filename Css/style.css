@@ -2,6 +2,7 @@
   --font-web: "Roboto", "sans-serif";
   --font-title: "Montserrat", sans-serif;
   --Primary-color: #3196ff;
+  --back-color: #f4f4f4;
 }
 * {
   margin: 0;
@@ -26,6 +27,12 @@ body {
 .l-heading {
   font-size: 32px;
   color: #3b3b3b;
+  font-family: var(--font-title);
+}
+.m-heading {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
   font-family: var(--font-title);
 }
 .line {
@@ -54,9 +61,10 @@ body {
   transform: rotate(-45deg) translateX(-33px);
   left: -21px;
 }
+
 /* Make Navbar */
 #navbar {
-  background: #fff;
+  background: var(--back-color);
 }
 .container-nav {
   display: flex;
@@ -174,6 +182,7 @@ body {
 #history {
   padding: 80px 0;
   text-align: center;
+  background: var(--back-color);
 }
 .history-container {
   display: flex;
@@ -185,4 +194,95 @@ body {
 .history-container > p {
   padding: 0 310px;
   line-height: 1.5;
+}
+/* Section:Plarces */
+#place {
+  padding: 30px 0;
+  position: relative;
+  background: var(--back-color);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.place-container {
+  display: flex;
+  overflow: auto;
+  white-space: wrap;
+  scroll-behavior: smooth;
+}
+.places-box {
+  width: 300px;
+  height: 470px;
+  position: relative;
+}
+.places-box img {
+  width: 300px;
+  height: 100%;
+}
+/* Make overLay */
+.overlay {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(49, 231, 255, 0.799);
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  backdrop-filter: blur(3px);
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay > * {
+  transform: translateY(50px);
+  transition: transform 0.3s;
+}
+.overlay:hover > * {
+  transform: translateY(0px);
+}
+.overlay p {
+  font-size: 15px;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+.overlay .social-media {
+  margin-top: 35px;
+}
+.overlay .social-media i {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.arrow {
+  background-color: rgb(255, 255, 255, 0);
+  border-radius: 50%;
+  display: flex;
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+.arrow:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.arrow-right {
+  position: absolute;
+  top: 43%;
+  right: 20px;
+}
+.arrow-left {
+  position: absolute;
+  top: 43%;
+  left: 20px;
+}
+
+.arrow img {
+  width: 28px;
+  opacity: 1;
+  cursor: pointer;
 }
