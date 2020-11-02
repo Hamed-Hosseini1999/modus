@@ -1,6 +1,7 @@
 :root {
   --font-web: "Roboto", "sans-serif";
   --font-title: "Montserrat", sans-serif;
+  --font-client: "Satisfy", cursive;
   --Primary-color: #3196ff;
   --back-color: #f4f4f4;
 }
@@ -60,6 +61,10 @@ body {
   position: absolute;
   transform: rotate(-45deg) translateX(-33px);
   left: -21px;
+}
+.font-client {
+  font-family: var(--font-client);
+  font-family: 13px;
 }
 
 /* Make Navbar */
@@ -180,7 +185,7 @@ body {
 
 /* Section:Little History */
 #history {
-  padding: 80px 0;
+  padding: 90px 0;
   text-align: center;
   background: var(--back-color);
 }
@@ -291,7 +296,7 @@ body {
 /* Section:Services */
 #services {
   background: var(--back-color);
-  padding: 50px 0;
+  padding: 90px 0;
 }
 #services .service {
   display: flex;
@@ -330,4 +335,25 @@ body {
   letter-spacing: 1px;
   font-family: var(--font-title);
   line-height: 1;
+}
+/* Section:Client */
+#client {
+  text-align: center;
+  background-color: #fff;
+  padding: 90px 0;
+}
+
+#client .history-container p {
+  padding-bottom: 22px;
+}
+/* Client:Brand */
+.brands {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.brands img {
+  /* width: 100px; */
 }
