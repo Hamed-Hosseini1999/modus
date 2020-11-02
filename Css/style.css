@@ -237,11 +237,12 @@ body {
   transition: opacity 0.3s;
   cursor: pointer;
 }
+
 .overlay:hover {
   opacity: 1;
 }
 .overlay > * {
-  transform: translateY(50px);
+  transform: translateY(40px);
   transition: transform 0.3s;
 }
 .overlay:hover > * {
@@ -285,4 +286,48 @@ body {
   width: 28px;
   opacity: 1;
   cursor: pointer;
+}
+
+/* Section:Services */
+#services {
+  background: var(--back-color);
+  padding: 50px 0;
+}
+#services .service {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+#services .service .service-item {
+  width: 310px;
+  height: 310px;
+  background-color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: #000;
+}
+#services .service .service-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+#services .service .service-item img {
+  width: 47px;
+}
+#services .service .service-item .line-2 {
+  width: 45px;
+  height: 3px;
+  margin: 14px auto;
+  background-color: var(--Primary-color);
+}
+#services .service .service-item h3 {
+  font-size: 19px;
+  color: #4a4a4a;
+  margin: 14px 0;
+  letter-spacing: 1px;
+  font-family: var(--font-title);
+  line-height: 1;
 }
