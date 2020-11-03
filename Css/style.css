@@ -26,7 +26,7 @@ body {
   margin: auto;
 }
 .l-heading {
-  font-size: 32px;
+  font-size: 26px;
   color: #3b3b3b;
   font-family: var(--font-title);
 }
@@ -185,7 +185,7 @@ body {
 
 /* Section:Little History */
 #history {
-  padding: 90px 0;
+  padding: 80px 0;
   text-align: center;
   background: var(--back-color);
 }
@@ -296,7 +296,7 @@ body {
 /* Section:Services */
 #services {
   background: var(--back-color);
-  padding: 90px 0;
+  padding: 80px 0;
 }
 #services .service {
   display: flex;
@@ -340,7 +340,7 @@ body {
 #client {
   text-align: center;
   background-color: #fff;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 #client .history-container p {
@@ -352,8 +352,103 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .brands img {
-  /* width: 100px; */
+  width: 200px;
+}
+/* Section:Contact-about */
+#contact-about {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+.contact-about-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1033px;
+  margin: 0 auto;
+}
+.about,
+.contact {
+  width: 500px;
+  text-align: center;
+  border: 3px solid #4a4a4a;
+  border-radius: 10px;
+  padding: 40px 40px 30px 40px;
+}
+.about h3 {
+  font-family: var(--font-title);
+  padding: 20px;
+}
+.about .line-2 {
+  width: 35px;
+  height: 3px;
+  margin: 14px auto;
+  background-color: var(--Primary-color);
+}
+.about p {
+  padding: 4px 0;
+  font-weight: 300;
+  line-height: 2;
+}
+/* contact */
+.contact > .line-2 {
+  width: 35px;
+  height: 3px;
+  margin: 14px auto;
+  background-color: var(--Primary-color);
+}
+.contact h3 {
+  font-family: var(--font-title);
+  padding: 20px;
+}
+
+.contact .email {
+  width: 100%;
+  border-bottom: 3px solid #4a4a4a;
+}
+.contact form label {
+  display: block;
+  text-align: left;
+  font-family: var(--font-title);
+  font-size: 15px;
+  padding: 10px 0;
+}
+.contact input,
+textarea {
+  display: block;
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+}
+
+.contact .email input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.contact .textarea {
+  width: 100%;
+  border-bottom: 3px solid #4a4a4a;
+  padding: 40px 0;
+}
+.contact .textarea input {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid#4a4a4a;
+  background: transparent;
+  outline: none;
+}
+
+.btn-send {
+  width: 100%;
+  border: none;
+  padding: 50px 0;
+  color: var(--Primary-color);
+  text-align: right;
+  display: inline-block;
 }
