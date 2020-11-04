@@ -366,7 +366,7 @@ body {
 .contact-about-container {
   display: flex;
   justify-content: space-between;
-  width: 1033px;
+  width: 75%;
   margin: 0 auto;
 }
 .about,
@@ -451,4 +451,20 @@ textarea {
   color: var(--Primary-color);
   text-align: right;
   display: inline-block;
+}
+/* Footer:social */
+#footer {
+  background: var(--Primary-color);
+  color: #fff;
+  padding: 30px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78%;
+  margin: auto;
+}
+.footer-container .social-media i {
+  padding: 10px;
 }
